@@ -11,6 +11,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "imghippo.com",
       },
+      {
+        protocol: "https",
+        hostname: "api.imghippo.com",
+      },
     ],
   },
 };

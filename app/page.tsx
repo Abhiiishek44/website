@@ -88,7 +88,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur supports-backdrop-filter:bg-background/60">
+      <header className="sticky top-0 z-50 w-full bg-background">
         <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
           <Link href="/" className="flex items-center space-x-2">
             <div className="w-9 h-9 bg-linear-to-br from-cyan-500 to-cyan-600 rounded-lg flex items-center justify-center shadow-lg shadow-cyan-500/20">
@@ -215,7 +215,7 @@ export default function Home() {
           <div className="relative">
             <div className="rounded-xl overflow-hidden shadow-2xl border border-border">
               <Image 
-                src="https://www.imghippo.com/i/sHeT1038Ckg.png"
+                src="https://api.imghippo.com/files/MTA6734rLY.png"
                 alt="Voxora Chat Widget Preview"
                 className="w-full h-auto"
                 width={1200}
