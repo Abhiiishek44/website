@@ -88,7 +88,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="sticky top-0 z-50 w-full bg-background">
+      <header className="sticky top-0 z-50 w-full">
         <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
           <Link href="/" className="flex items-center space-x-2">
             <div className="w-9 h-9 bg-linear-to-br from-cyan-500 to-cyan-600 rounded-lg flex items-center justify-center shadow-lg shadow-cyan-500/20">
@@ -222,6 +222,48 @@ export default function Home() {
                 height={600}
                 priority
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Used By Section */}
+      <section className="py-16 px-4 bg-background overflow-hidden">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-sm font-semibold text-cyan-600 mb-2">Trusted by Teams Worldwide</p>
+            <h2 className="text-2xl font-bold mb-4">Used by Leading Companies</h2>
+            <p className="text-muted-foreground">
+              Join thousands of companies using Voxora for their customer support
+            </p>
+          </div>
+          
+          <div className="relative overflow-hidden">
+            <div className="flex animate-scroll">
+              {/* Duplicate the array twice for seamless loop */}
+              {[...Array(2)].map((_, setIndex) => (
+                <div key={setIndex} className="flex shrink-0">
+                  {[
+                    "Acme Corp",
+                    "TechFlow Solutions",
+                    "CloudSync",
+                    "DataVault Inc",
+                    "NexusAI",
+                    "SwiftPay",
+                    "VistaHub",
+                    "ProStream",
+                  ].map((company, index) => (
+                    <div
+                      key={`${setIndex}-${index}`}
+                      className="flex items-center justify-center px-12 py-6 mx-4"
+                    >
+                      <span className="text-xl font-bold text-muted-foreground whitespace-nowrap">
+                        {company}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              ))}
             </div>
           </div>
         </div>

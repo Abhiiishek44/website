@@ -69,6 +69,15 @@ html {
   50% { opacity: 1; }
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
@@ -79,6 +88,11 @@ html {
 
 .animate-pulse-glow {
   animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+  will-change: transform;
 }
 
 /* Gradient text */
