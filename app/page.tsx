@@ -88,31 +88,37 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
-      <header className="sticky top-0 z-50 w-full">
+      <header className="sticky top-0 bg-white z-50 w-full">
         <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-9 h-9 bg-linear-to-br from-primary to-primary rounded-lg flex items-center justify-center shadow-lg shadow-primary/20">
-              <span className="text-sm font-bold text-primary-foreground">V</span>
+            <div className="w-9 h-9 g overflow-hidden">
+              <Image 
+                src="/logo.png"
+                alt="Voxora Logo"
+                width={36}
+                height={36}
+                className="w-full h-full object-contain"
+              />
             </div>
-            <span className="text-xl font-bold">Voxora</span>
+            <span className="text-xl text-primary font-bold">Voxora</span>
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
             <Link
               href="#features"
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              className="text-sm font-medium text-primary hover:text-accent transition-colors"
             >
               Features
             </Link>
             <Link
               href="#how-it-works"
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              className="text-sm font-medium text-primary hover:text-accent transition-colors"
             >
               How it Works
             </Link>
             <Link
               href="#community"
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+              className="text-sm font-medium text-primary hover:text-accent transition-colors"
             >
               Community
             </Link>
@@ -120,7 +126,7 @@ export default function Home() {
               href="https://github.com/voxora-cloud/voxora"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors inline-flex items-center gap-1"
+              className="text-sm font-medium text-primary hover:text-accent transition-colors inline-flex items-center gap-1"
             >
               <Github className="h-4 w-4" />
               GitHub
@@ -142,11 +148,8 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative py-20 md:py-32 px-4 overflow-hidden hero-gradient">
-        {/* Background decorations */}
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-10 right-10 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float-delayed" />
-
+      <section className="relative py-20 md:py-32 px-4 bg-white overflow-hidden">
+  
         <div className="container mx-auto relative">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
@@ -154,7 +157,7 @@ export default function Home() {
               100% Open Source Customer Support
             </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+            <h1 className="text-4xl text-black sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
               Customer Support
               <span className="block gradient-text">Reimagined</span>
             </h1>

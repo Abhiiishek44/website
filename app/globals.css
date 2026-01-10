@@ -3,17 +3,17 @@
 :root {
   --background: #121212;
   --foreground: #e2e8f0;
-  --muted: #f1f5f9;
-  --muted-foreground: #64748b;
+  --muted: #242424;
+  --muted-foreground: #9ca3af;
   --primary: #006239;
   --primary-foreground: #dde8e3;
   --secondary: #242424;
   --secondary-foreground: #fafafa;
   --accent: #313131;
   --accent-foreground: #fafafa;
-  --border: #e2e8f0;
-  --card: #ffffff;
-  --card-foreground: #0f172a;
+  --border: #313131;
+  --card: #1a1a1a;
+  --card-foreground: #e2e8f0;
 }
 
 @theme inline {
@@ -38,17 +38,17 @@
   :root {
     --background: #121212;
     --foreground: #e2e8f0;
-    --muted: #1e293b;
-    --muted-foreground: #94a3b8;
+    --muted: #242424;
+    --muted-foreground: #9ca3af;
     --primary: #006239;
     --primary-foreground: #dde8e3;
     --secondary: #242424;
     --secondary-foreground: #fafafa;
     --accent: #313131;
     --accent-foreground: #fafafa;
-    --border: #1e293b;
-    --card: #1e293b;
-    --card-foreground: #f8fafc;
+    --border: #313131;
+    --card: #1a1a1a;
+    --card-foreground: #e2e8f0;
   }
 }
 
