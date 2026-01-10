@@ -1,13 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #0f172a;
+  --background: #121212;
+  --foreground: #e2e8f0;
   --muted: #f1f5f9;
   --muted-foreground: #64748b;
-  --primary: #0ea5e9;
-  --primary-foreground: #ffffff;
-  --accent: #06b6d4;
+  --primary: #006239;
+  --primary-foreground: #dde8e3;
+  --secondary: #242424;
+  --secondary-foreground: #fafafa;
+  --accent: #313131;
+  --accent-foreground: #fafafa;
   --border: #e2e8f0;
   --card: #ffffff;
   --card-foreground: #0f172a;
@@ -20,7 +23,10 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
   --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
   --color-border: var(--border);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
@@ -30,13 +36,16 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0f172a;
-    --foreground: #f8fafc;
+    --background: #121212;
+    --foreground: #e2e8f0;
     --muted: #1e293b;
     --muted-foreground: #94a3b8;
-    --primary: #0ea5e9;
-    --primary-foreground: #0f172a;
-    --accent: #06b6d4;
+    --primary: #006239;
+    --primary-foreground: #dde8e3;
+    --secondary: #242424;
+    --secondary-foreground: #fafafa;
+    --accent: #313131;
+    --accent-foreground: #fafafa;
     --border: #1e293b;
     --card: #1e293b;
     --card-foreground: #f8fafc;
