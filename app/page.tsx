@@ -207,7 +207,7 @@ export default function Home() {
       </section>
 
       {/* Chat Widget Preview */}
-      <section className="py-16 px-4 bg-muted/30">
+      <section className=" py-16 px-4 bg-muted/30">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Embeddable Chat Widget</h2>
@@ -215,13 +215,13 @@ export default function Home() {
               Lightweight and powerful. Embed in any website with a single line of code.
             </p>
           </div>
-          <div className="relative">
+          <div className="relative max-w-2xl mx-auto">
             <div className="rounded-xl overflow-hidden shadow-2xl border border-border">
               <Image 
                 src="https://api.imghippo.com/files/MTA6734rLY.png"
                 alt="Voxora Chat Widget Preview"
                 className="w-full h-auto"
-                width={1200}
+                width={800}
                 height={600}
                 priority
               />
@@ -230,48 +230,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Used By Section */}
-      <section className="py-16 px-4 bg-background overflow-hidden">
-        <div className="container mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-sm font-semibold text-primary mb-2">Trusted by Teams Worldwide</p>
-            <h2 className="text-2xl font-bold mb-4">Used by Leading Companies</h2>
-            <p className="text-muted-foreground">
-              Join thousands of companies using Voxora for their customer support
-            </p>
-          </div>
-          
-          <div className="relative overflow-hidden">
-            <div className="flex animate-scroll">
-              {/* Duplicate the array twice for seamless loop */}
-              {[...Array(2)].map((_, setIndex) => (
-                <div key={setIndex} className="flex shrink-0">
-                  {[
-                    "Acme Corp",
-                    "TechFlow Solutions",
-                    "CloudSync",
-                    "DataVault Inc",
-                    "NexusAI",
-                    "SwiftPay",
-                    "VistaHub",
-                    "ProStream",
-                  ].map((company, index) => (
-                    <div
-                      key={`${setIndex}-${index}`}
-                      className="flex items-center justify-center px-12 py-6 mx-4"
-                    >
-                      <span className="text-xl font-bold text-muted-foreground whitespace-nowrap">
-                        {company}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
+    
       {/* Features Section */}
       <section id="features" className="py-20 md:py-32 px-4">
         <div className="container mx-auto">
