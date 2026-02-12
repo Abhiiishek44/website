@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Github } from "lucide-react";
 
 export default function Footer() {
@@ -7,9 +8,15 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-2 md:col-span-1">
-            <Link href="/" className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-linear-to-br from-primary to-primary rounded-lg flex items-center justify-center">
-                <span className="text-sm font-bold text-primary-foreground">V</span>
+            <Link href="/" className="flex items-center mb-4">
+              <div className="w-14 h-14  from-primary to-primary  rounded-lg flex items-center justify-center p-1">
+                <Image 
+                  src="/logo1.png"
+                  alt="Voxora Logo"
+                  width={40}
+                  height={40}
+                  className="w-full h-full object-contain"
+                />
               </div>
               <span className="font-bold text-lg">Voxora</span>
             </Link>

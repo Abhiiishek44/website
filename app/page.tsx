@@ -6,6 +6,8 @@ import ChatWidgetPreview from "@/components/ChatWidgetPreview";
 import FeaturesSection from "@/components/FeaturesSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import DeploymentSection from "@/components/DeploymentSection";
+import SectionConnector from "@/components/SectionConnector";
+import InfrastructurePlanner from "@/components/InfrastructurePlanner";
 import CommunitySection from "@/components/CommunitySection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
@@ -26,6 +28,8 @@ export default function Home() {
       <FeaturesSection />
       <HowItWorksSection />
       <DeploymentSection />
+      <SectionConnector />
+      <InfrastructurePlanner />
       <CommunitySection />
       <CTASection />
       <Footer />

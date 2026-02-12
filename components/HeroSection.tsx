@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { Github, ArrowRight, Sparkles, Star, Gauge, Lock, Globe } from "lucide-react";
+import { Github, ArrowRight, Sparkles, Star, Zap, Bot, Globe } from "lucide-react";
 
 const stats = [
   { value: "100%", label: "Open Source", icon: Star },
-  { value: "<100ms", label: "Response Time", icon: Gauge },
-  { value: "MIT", label: "License", icon: Lock },
+  { value: "AI", label: "Powered", icon: Bot },
+  { value: "Real", label: "Time", icon: Zap },
   { value: "∞", label: "Self-Hosted", icon: Globe },
 ];
 
@@ -13,9 +13,9 @@ export default function HeroSection() {
     <section className="relative py-20 md:py-32 px-4 overflow-hidden">
       <div className="container mx-auto relative z-10">
         <div className="max-w-5xl mx-auto text-center">
-          <div className="inline-flex items-center px-4 py-2 rounded-full glass golden-border mb-8 animate-float">
+          <div className="inline-flex items-center px-4 py-2 rounded-full glass green-border mb-8 animate-float">
             <Sparkles className="w-4 h-4 mr-2 text-primary" />
-            <span className="text-sm font-medium golden-glimmer">100% Open Source Customer Support Platform</span>
+            <span className="text-sm font-medium gradient-text">100% Open Source Customer Support Platform</span>
           </div>
 
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6">

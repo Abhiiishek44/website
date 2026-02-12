@@ -5,18 +5,18 @@ import { Github } from "lucide-react";
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full ">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-        <Link href="/" className="flex items-center space-x-2 group">
-          <div className="w-9 h-9 overflow-hidden relative">
+      <div className="container mx-auto flex h-16 items-center justify-between  md:px-6">
+        <Link href="/" className="flex items-center group">
+          <div className="w-17 h-17 overflow-hidden relative">
             <Image 
-              src="/logo.png"
+              src="/logo1.png"
               alt="Voxora Logo"
-              width={36}
-              height={36}
+              width={40}
+              height={40}
               className="w-full h-full object-contain transition-transform group-hover:scale-110"
             />
           </div>
-          <span className="text-xl text-foreground font-bold gradient-text">Voxora</span>
+          <span className="text-xl text-white font-bold">Voxora</span>
         </Link>
 
         <nav className="hidden md:flex items-center space-x-8">
