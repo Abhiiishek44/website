@@ -66,9 +66,9 @@ export default function FeaturesSection() {
     <section id="features" className="py-20 md:py-32 px-4 relative">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full glass mb-6">
+          <div className="inline-flex items-center px-4 py-2 rounded-full glass green-border mb-8 animate-float">
             <Zap className="w-4 h-4 mr-2 text-primary" />
-            <span className="text-sm font-medium text-foreground/80">Powerful Features</span>
+            <span className="text-sm font-medium gradient-text">Powerful Features</span>
           </div>
           <h2 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
             Everything You <span className="gradient-text">Need</span>

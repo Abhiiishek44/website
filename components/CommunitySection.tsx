@@ -6,9 +6,9 @@ export default function CommunitySection() {
     <section id="community" className="py-20 md:py-32 px-4 relative">
       <div className="container mx-auto">
         <div className="max-w-5xl mx-auto text-center">
-          <div className="inline-flex items-center px-4 py-2 rounded-full glass mb-6">
+          <div className="inline-flex items-center px-4 py-2 rounded-full glass green-border mb-8 animate-float">
             <Heart className="w-4 h-4 mr-2 text-primary" />
-            <span className="text-sm font-medium text-foreground/80">Open Source Community</span>
+            <span className="text-sm font-medium gradient-text">Open Source Community</span>
           </div>
           <h2 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
             Join the <span className="gradient-text">Community</span>

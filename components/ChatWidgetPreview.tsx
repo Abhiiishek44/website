@@ -6,7 +6,7 @@ export default function ChatWidgetPreview() {
     <section className="py-16 px-4 relative">
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <div className="inline-flex items-center px-3 py-1 rounded-full glass green-border mb-4">
+          <div className="inline-flex items-center px-4 py-2 rounded-full glass green-border mb-8 animate-float">
             <Sparkles className="w-4 h-4 mr-2 text-primary" />
             <span className="text-sm font-medium gradient-text">Widget Preview</span>
           </div>
