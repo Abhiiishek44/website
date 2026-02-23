@@ -21,7 +21,7 @@ export default function Home() {
       <div className="floating-orb w-96 h-96 bg-primary/20 absolute top-0 right-0 -translate-y-1/2 translate-x-1/2" />
       <div className="floating-orb w-96 h-96 bg-accent/10 absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2" />
       
-      <AlertBanner />
+      {/* <AlertBanner /> */}
       <Header />
       <HeroSection />
       {/* <CompaniesSection /> */}
@@ -31,7 +31,7 @@ export default function Home() {
       <HowItWorksSection />
       <DeploymentSection />
       <SectionConnector />
-      <InfrastructurePlanner />
+      {/* <InfrastructurePlanner /> */}
       <CommunitySection />
       <CTASection />
       <Footer />

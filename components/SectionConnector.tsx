@@ -49,7 +49,7 @@ export default function SectionConnector() {
         </div>
 
         {/* Flow indicators */}
-        <div className="grid grid-cols-3 gap-8 mt-8">
+        <div className="flex flex-row justify-center gap-16 mt-8">
           <div className="text-center">
             <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-3">
               <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,7 +70,7 @@ export default function SectionConnector() {
             <p className="text-xs text-foreground/60 font-mono">Auto-scaling based on your traffic requirements</p>
           </div>
           
-          <div className="text-center">
+          {/* <div className="text-center">
             <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-3">
               <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -78,7 +78,7 @@ export default function SectionConnector() {
             </div>
             <h4 className="text-sm font-mono text-foreground/80 mb-2">Calculate</h4>
             <p className="text-xs text-foreground/60 font-mono">Estimate costs and plan your infrastructure</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

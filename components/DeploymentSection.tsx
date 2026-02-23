@@ -66,7 +66,7 @@ export default function DeploymentSection() {
           >
             <div className="w-20 h-20 glass rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:glow-primary transition-all overflow-hidden p-4">
               <Image 
-                src="/logos/docker.png" 
+                src="/logos/Docker.png" 
                 alt="Docker"
                 width={80}
                 height={80}
