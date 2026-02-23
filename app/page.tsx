@@ -4,6 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import CompaniesSection from "@/components/CompaniesSection";
 import ChatWidgetPreview from "@/components/ChatWidgetPreview";
 import FeaturesSection from "@/components/FeaturesSection";
+import ArchitectureDiagram from "@/components/ArchitectureDiagram";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import DeploymentSection from "@/components/DeploymentSection";
 import SectionConnector from "@/components/SectionConnector";
@@ -23,9 +24,10 @@ export default function Home() {
       <AlertBanner />
       <Header />
       <HeroSection />
-      <CompaniesSection />
+      {/* <CompaniesSection /> */}
       <ChatWidgetPreview />
       <FeaturesSection />
+      <ArchitectureDiagram />
       <HowItWorksSection />
       <DeploymentSection />
       <SectionConnector />

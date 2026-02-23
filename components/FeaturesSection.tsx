@@ -23,18 +23,18 @@ const features = [
     description:
       "Intelligent chatbots with LLM integration for automated responses and smart escalation.",
   },
-  {
-    icon: PhoneCall,
-    title: "Voice Integration",
-    description:
-      "Text-to-speech and speech-to-text for seamless voice conversations in-widget.",
-  },
-  {
-    icon: BarChart3,
-    title: "Advanced Analytics",
-    description:
-      "Comprehensive insights into team performance, response times, and customer satisfaction.",
-  },
+  // {
+  //   icon: PhoneCall,
+  //   title: "Voice Integration",
+  //   description:
+  //     "Text-to-speech and speech-to-text for seamless voice conversations in-widget.",
+  // },
+  // {
+  //   icon: BarChart3,
+  //   title: "Advanced Analytics",
+  //   description:
+  //     "Comprehensive insights into team performance, response times, and customer satisfaction.",
+  // },
   {
     icon: Shield,
     title: "Enterprise Security",
@@ -79,21 +79,41 @@ export default function FeaturesSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="group glass-card p-8 rounded-2xl hover:scale-105 transition-all duration-300"
-            >
-              <feature.icon className="h-12 w-12 text-primary mb-6 group-hover:scale-110 transition-transform" />
-              <h3 className="text-xl font-semibold mb-3 text-foreground">
-                {feature.title}
-              </h3>
-              <p className="text-sm text-foreground/60 leading-relaxed">
-                {feature.description}
-              </p>
-            </div>
-          ))}
+        <div className="max-w-7xl mx-auto">
+          {/* First row - 3 cards */}
+          <div className="grid md:grid-cols-3 gap-6 mb-6">
+            {features.slice(0, 3).map((feature, index) => (
+              <div
+                key={index}
+                className="group glass-card p-8 rounded-2xl hover:scale-105 transition-all duration-300"
+              >
+                <feature.icon className="h-12 w-12 text-primary mb-6 group-hover:scale-110 transition-transform" />
+                <h3 className="text-xl font-semibold mb-3 text-foreground">
+                  {feature.title}
+                </h3>
+                <p className="text-sm text-foreground/60 leading-relaxed">
+                  {feature.description}
+                </p>
+              </div>
+            ))}
+          </div>
+          {/* Second row - 2 cards centered */}
+          <div className="flex justify-center gap-6">
+            {features.slice(3).map((feature, index) => (
+              <div
+                key={index}
+                className="group glass-card p-8 rounded-2xl hover:scale-105 transition-all duration-300 w-full md:w-[calc(33.333%-12px)]"
+              >
+                <feature.icon className="h-12 w-12 text-primary mb-6 group-hover:scale-110 transition-transform" />
+                <h3 className="text-xl font-semibold mb-3 text-foreground">
+                  {feature.title}
+                </h3>
+                <p className="text-sm text-foreground/60 leading-relaxed">
+                  {feature.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
