@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -42,6 +43,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+      <Script src="https://cdn.voxora.cloud/voxora-widget/v1/voxora.js?v=2" data-voxora-cdn-url="https://cdn.voxora.cloud" data-voxora-api-url="https://apivoxora.voxora.cloud" data-voxora-public-key="69a1e081d18cbe85b0426d56" data-voxora-env="undefined" async></Script>
       </body>
     </html>
   );
