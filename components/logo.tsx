@@ -1,0 +1,83 @@
+interface LogoProps {
+  size?: number;
+  className?: string;
+  color?: string;
+  contentColor?: string;
+  animate?: boolean;
+  speed?: number; // seconds
+  showBackgroundColor?: boolean;
+}
+
+const Logo = ({
+  size = 40,
+  className,
+  color = "#845C6C",
+  contentColor = "white",
+  animate = true,
+  speed = 2,
+  showBackgroundColor = true,
+}: LogoProps) => {
+  const bars = [40, 60, 80, 60, 40];
+
+  return (
+    <svg
+      viewBox="0 0 200 200"
+      width={size}
+      height={size}
+      className={className}
+      style={{ display: "block" }}
+    >
+      {/* Background */}
+      {showBackgroundColor && (
+        <rect x="5" y="5" width="190" height="190" rx="30" fill={color} />
+      )}
+
+      {/* Bars */}
+      {bars.map((h, i) => {
+        const x = 50 + i * 20;
+        const y = 130 - h;
+
+        return (
+          <rect
+            key={i}
+            x={x}
+            y={y}
+            width="10"
+            height={h}
+            rx="5"
+            fill={contentColor}
+            style={
+              animate
+                ? {
+                  transformOrigin: "bottom",
+                  transformBox: "fill-box",
+                  animation: `barGrow ${speed}s ease-in-out infinite`,
+                  animationDelay: `${i * 0.2}s`,
+                }
+                : undefined
+            }
+          />
+        );
+      })}
+
+      {/* Dots */}
+      {[75, 100, 125].map((cx, i) => (
+        <circle key={i} cx={cx} cy="145" r="6" fill={contentColor} />
+      ))}
+
+      {/* Animation */}
+      {animate && (
+        <style>
+          {`
+            @keyframes barGrow {
+              0%, 100% { transform: scaleY(1); }
+              50% { transform: scaleY(0.6); }
+            }
+          `}
+        </style>
+      )}
+    </svg>
+  );
+};
+
+export default Logo;

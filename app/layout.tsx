@@ -1,34 +1,46 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import Script from "next/script";
+import { Hanken_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const hanken = Hanken_Grotesk({
+  variable: "--font-hanken",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const jetbrains = JetBrains_Mono({
+  variable: "--font-jetbrains",
   subsets: ["latin"],
+  weight: ["500", "600"],
 });
 
 export const metadata: Metadata = {
-  title: "Voxora - Open Source Customer Support Platform",
-  description: "Voxora is a modern, real-time customer support platform. Open source, self-hostable, with AI-powered chat, voice integration, and powerful analytics.",
-  keywords: ["customer support", "chat widget", "open source", "live chat", "AI support", "help desk"],
-  authors: [{ name: "Voxora Team" }],
+  title: "interaOne | Atmospheric Precision Deep-Work",
+  description:
+    "A deep-work environment where autonomous AI agents handle mechanical tasks with surgical precision.",
+  keywords: [
+    "interaOne",
+    "autonomous intelligence",
+    "deep work",
+    "AI agents",
+    "developer productivity",
+    "parallel execution",
+    "code automation",
+  ],
+  authors: [{ name: "interaOne Team" }],
   openGraph: {
-    title: "Voxora - Open Source Customer Support Platform",
-    description: "Modern, real-time customer support platform. Open source and self-hostable.",
-    url: "https://www.voxora.cloud",
-    siteName: "Voxora",
+    title: "interaOne | Atmospheric Precision Deep-Work",
+    description:
+      "Built to make you extraordinarily productive with precision-built autonomous agents.",
+    url: "https://www.interaone.com",
+    siteName: "interaOne",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Voxora - Open Source Customer Support Platform",
-    description: "Modern, real-time customer support platform. Open source and self-hostable.",
+    title: "interaOne | Atmospheric Precision Deep-Work",
+    description:
+      "Built to make you extraordinarily productive with precision-built autonomous agents.",
   },
 };
 
@@ -38,12 +50,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html className="light bg-surface text-on-surface" lang="en">
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,300,0,0" rel="stylesheet" />
+      </head>
+      <body className={`${hanken.className} ${hanken.variable} ${jetbrains.variable} bg-surface text-on-surface antialiased`}>
         {children}
-      <Script src="https://cdn.voxora.cloud/voxora-widget/v1/voxora.js?v=2" data-voxora-cdn-url="https://cdn.voxora.cloud" data-voxora-api-url="https://apivoxora.voxora.cloud" data-voxora-public-key="69a1e081d18cbe85b0426d56" data-voxora-env="undefined" async></Script>
       </body>
     </html>
   );
